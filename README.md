@@ -30,13 +30,13 @@ Embedding dropout rate.
 
 <img src="./images/cross_vit.png" width="400px"></img>
 
-<a href="https://arxiv.org/abs/2103.14899">This paper</a> proposes to have two vision transformers processing the image at different scales, cross attending to one every so often. They show improvements on top of the base vision transformer.
+<a href="https://arxiv.org/abs/2103.14899">This paper</a> proposes to have two vision transformers processing the image at different scales, two streams, cross attending to one every so often. They show improvements on top of the base vision transformer.
 
 ```python
 import torch
-from vit_pytorch.cross_vit import CrossViT
+from vit_pytorch.cross_vit import D2F-MViT
 
-v = CrossViT(
+v = D2F-MViT(
     image_size = 256,
     num_classes = 1000,
     depth = 4,               # number of multi-scale encoding blocks
