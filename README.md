@@ -255,15 +255,21 @@ v(img) # (1, 1000)
 
 ## Citations
 ```bibtex
-@article{hassani2021escaping,
-    title   = {Escaping the Big Data Paradigm with Compact Transformers},
-    author  = {Ali Hassani and Steven Walton and Nikhil Shah and Abulikemu Abuduweili and Jiachen Li and Humphrey Shi},
-    year    = 2021,
-    url     = {https://arxiv.org/abs/2104.05704},
-    eprint  = {2104.05704},
-    archiveprefix = {arXiv},
-    primaryclass = {cs.CV}
+@Article{Wang2022,
+  Title                    = {D2F: discriminative dense fusion of appearance and motion modalities for end-to-end video classification},
+  Author                   = {Wang, Lin and Wang, Xingfu and Hawbani, Ammar and Xiong, Yan and Zhang, Xu},
+  Journal                  = {Multimedia Tools and Applications},
+  Year                     = {2022},
+  Pages                    = {--},
+
+  Abstract                 = {Recently, two-stream networks with multi-modality inputs have shown to be of vital importance for state-of-the-art video understanding. Previous deep systems typically employ a late fusion strategy, however, despite its simplicity and effectiveness, the late strategy might experience insufficient fusion due to that it performs fusion across modalities only once and treats each modality equally without discrimination. In this paper, we propose a Discriminative Dense Fusion (D2F) network, addressing these limitations by densely inserting an attention-based fusion block at each layer. We experiment with two typical action classification benchmarks and three popular classification backbones, where our proposed module consistently outperforms state-of-the-art baselines by noticeable margins. Specifically, the two-stream VGG16, ResNet and I3D achieve accuracy of [93.5%, 69.2%], [94.6%, 70.5%], [94.1%, 72.3%] with D2F on [UCF101, HMDB51], respectively, with absolute gains of [5.5%, 9.8%], [5.13%, 9.91%], and [0.7%, 5.9%] compared with their late fusion counterparts. The qualitative performance also demonstrates that our model can learn more informative complementary representation.},
+  ISSN                     = {1573-7721},
+  Owner                    = {Administrator},
+  Refid                    = {Wang2022},
+  Timestamp                = {2022.01.12},
+  Url                      = {https://doi.org/10.1007/s11042-021-11247-7}
 }
+
 ```
 
 
