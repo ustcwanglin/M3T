@@ -28,7 +28,7 @@ Embedding dropout rate.
 
 ## Two Stream ViT
 
-<img src="./images/cross_vit.png" width="400px"></img>
+<img src="./Eat.png" width="400px"></img>
 
 <a href="https://arxiv.org/abs/2103.14899">This paper</a> proposes to have two vision transformers processing the image at different scales, two streams, cross attending to one every so often. They show improvements on top of the base vision transformer.
 
