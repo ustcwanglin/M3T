@@ -145,13 +145,13 @@ logits, embeddings = v(img)
 embeddings # (1, 65, 1024) - (batch x patches x model dim)
 ```
 
-Or say for `CrossViT`, which has a multi-scale encoder that outputs two sets of embeddings for 'large' and 'small' scales
+Or say for `MViT`, which has a multi-scale encoder that outputs two sets of embeddings for 'rgb' and 'optical' streams
 
 ```python
 import torch
-from vit_pytorch.cross_vit import CrossViT
+from vit_pytorch.mscale_vit import MViT
 
-v = CrossViT(
+v = MViT(
     image_size = 256,
     num_classes = 1000,
     depth = 4,
@@ -171,7 +171,7 @@ v = CrossViT(
     emb_dropout = 0.1
 )
 
-# wrap the CrossViT
+# wrap the MViT
 
 from vit_pytorch.extractor import Extractor
 v = Extractor(v, layer_name = 'multi_scale_encoder') # take embedding coming from the output of multi-scale-encoder
@@ -193,7 +193,7 @@ embeddings # ((1, 257, 192), (1, 17, 384)) - (batch x patches x dimension) <- la
 
 
 ```bash
-$ pip install DenseVH-attention
+$ pip install Two-Stream-ViT
 ```
 
 ```python
@@ -271,6 +271,9 @@ v(img) # (1, 1000)
 }
 
 ```
+
+
+
 
 
 
