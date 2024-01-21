@@ -30,7 +30,7 @@ Embedding dropout rate.
 
 <img src="./Model.png" width="1000px"></img>
 
-<a href="https://arxiv.org/abs/2103.14899">This paper</a> proposes to have two vision transformers processing the image at different scales, two streams, cross attending to one every so often. They show improvements on top of the base vision transformer.
+This paper proposes to have two vision transformers processing the image at different scales, two streams, cross attending to one every so often. They show improvements on top of the base vision transformer.
 
 ```python
 import torch
